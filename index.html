@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="">
-    <meta name="description" content="">
     <title>Podcast Channel</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-
-    
 </head>
 
 <body>
-    <header class="header">
-        <div class="container menu-nav-container">
+    <header>
+        <div class="container menu-navbar">
             <img class="logo" src="images/svg/logo.svg" alt="logo">
             <input type="checkbox" id="check">
             <div class="menu-icon">
-                <label for="check" class="menu-close"><i class="fas fa-bars"></i></label>
-                <label for="check" class="menu-open"><i class="fas fa-times"></i></label>
+                <label for="check" class="menu-cerrar"><i class="fas fa-bars"></i></label>
+                <label for="check" class="menu-abrir"><i class="fas fa-times"></i></label>
             </div>
+
             <nav class="navigation">
                 <ul class="menu-list show">
-                    <li><a class="nav-first-link" href="#episodes-title">EPISODIOS</a></li>
+                    <li><a href="#episodios-titulo">EPISODIOS</a></li>
                     <li><a href="#nosotros">NOSOTROS</a></li>
                     <li><a href="#entrevistas">ENTREVISTAS</a></li>
-                    <li><a href="#topics">TÓPICOS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main class="main">
-        <section class="main-title">
-            <h1>Hello <span class="line-through">world</span> pale blue dot</h1>
+    <main>
+        <section>
+            <h1>Hello <span class="world-linea">world</span> pale blue dot</h1>
             <div>
-                <p class="description description-desktop">El portal de podcast que explora el mundo de la programación y la
-                    tecnología. Nuevos
-                    episodios, todos los jueves cada 15 días.</p>
-                <p class="description description-mobile">Un podcast que explora el mundo de la programación. Nuevos episodios,
-                    todos los jueves cada 15 días.</p>
+                <p class="descripcion descripcion-desktop">El portal de podcast que explora el mundo de la programación y la
+                    tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+                <p class="descripcion descripcion-mobile">El portal de podcast que explora el mundo de la programación y la
+                    tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
             </div>
             <div>
-                <a href="#nosotros" class="button-1">CONOCE MÁS</a>
+                <a href="#nosotros" class="conoce-mas">CONOCE MÁS</a>
             </div>
         </section>
 
-        <section class="episodes">
-            <div id="episodes-title">
+        <section class="episodios">
+            <div id="episodios-titulo">
                 <h2>Episodios</h2>
             </div>
-            <div class="episodes-frames">
+            <div class="episodios-frames">
                 <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
                 <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
@@ -60,29 +56,28 @@
             </div>
         </section>
 
-        <section id="nosotros" class="about-us">
-            <div class="about-us-image">
+        <section id="nosotros" class="nosotros">
+            <div class="nosotros-image">
                 <img src="images/Pictures/phone.png" alt="Imagen de la historia secreta de la mujer en programación">
             </div>
-            <div class="about-us-text">
-                <div class="about-us-title">
+            <div class="nosotros-text">
+                <div class="nosotros-titulo">
                     <h2>De dónde venimos</h2>
                 </div>
-                <div class="about-us-paragraph">
+                <div class="nosotros-paragraph">
                     <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position
-                        in
-                        the Universe, are challenged by this point of pale light.</p>
+                        in the Universe, are challenged by this point of pale light.</p>
                     <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
                         vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
                 </div>
             </div>
         </section>
 
-        <section id="entrevistas" class="interviews">
-            <div class="interviews-title">
+        <section id="entrevistas" class="entrevistas">
+            <div class="entrevistas-titulo">
                 <h2>Invitadas/os estelares</h2>
             </div>
-            <div class="interviews-images">
+            <div class="entrevistas-imagenes">
                 <img src="images/Pictures/grace-hopper.png" alt="Grace Hopper">
                 <img src="images/Pictures/Katie-Bouman.png" alt="Katie Bouman">
                 <img src="images/Pictures/Margaret_Hamilton.png" alt="Margaret Hamilton">
@@ -92,49 +87,49 @@
             </div>
         </section>
 
-        <section id="topics">
-            <div class="topics-title">
+        <section id="topicos">
+            <div class="topicos-titulo">
                 <h2>Algunos de nuestros temas</h2>
             </div>
-            <div class="topics-icons">
-                <div class="topics-icons-flex">
-                    <img class="icons" src="images/svg/icon1.svg" alt="Ícono de trabajo remoto">
+            <div class="topicos-iconos">
+                <div class="topicos-iconos-flex">
+                    <img class="icons" src="images/svg/icon1.svg" alt="Ícono Trabajo Remoto">
                     <h3 class="icons-title">Trabajo remoto</h3>
                 </div>
-                <div class="topics-icons-flex">
-                    <img class="icons" src="images/svg/icon2.svg" alt="Ícono de repensando la programación">
+                <div class="topicos-iconos-flex">
+                    <img class="icons" src="images/svg/icon2.svg" alt="Ícono Repensando la Programación">
                     <h3 class="icons-title">Repensando la programación</h3>
                 </div>
-                <div class="topics-icons-flex">
-                    <img class="icons" src="images/svg/icon3.svg" alt="Ícono de bases del código">
+                <div class="topicos-iconos-flex">
+                    <img class="icons" src="images/svg/icon3.svg" alt="Ícono Bases del Código">
                     <h3 class="icons-title">Bases del código</h3>
                 </div>
-                <div class="topics-icons-flex">
-                    <img class="icons" src="images/svg/icon4.svg" alt="Ícono de seguridad informática">
+                <div class="topicos-iconos-flex">
+                    <img class="icons" src="images/svg/icon4.svg" alt="Ícono Seguridad Informática">
                     <h3 class="icons-title">Seguridad informática</h3>
                 </div>
             </div>
         </section>
 
-        <section class="news">
-            <div class="news-title">
+        <section class="novedades">
+            <div class="novedades-titulo">
                 <h2>¿Querés las últimas novedades?</h2>
             </div>
             <div>
   
-                <a href="#episodes-title" class="news-button">ESCUCHÁ LOS EPISODIOS</a>
+                <a href="#episodios-titulo" class="novedades-btn">ESCUCHÁ LOS EPISODIOS</a>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="footer-copyright">
-            <span>© 2019 - Hello pale blue dot</span>
+            <p>© 2019 - Hello pale blue dot</p>
         </div>
-        <div class="footer-social-network">
-            <a href="https://www.spotify.com/ar" target="_blank"><i class="fab fa-spotify"></i></a>
+        <div class="footer-social-media">
+            <a href="https://www.spotify.com/" target="_blank"><i class="fab fa-spotify"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>
