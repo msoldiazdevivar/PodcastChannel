@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    overflow-x: hidden;
 }
 
 header {
@@ -375,8 +375,8 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -393,8 +393,38 @@ footer {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
 
+    .episodios-frames {
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 20rem);
+        margin: 30px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .episodios-frames:first-child {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .episodios-frames:nth-child(2) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .episodios-frames:nth-child(3) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .episodios-frames:nth-child(4) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
     .episodios-frames iframe {
         width: 90%;
         height: 90%;
@@ -415,12 +445,14 @@ footer {
         left: 37%; 
     }
 
-    .footer {
+    .footer-social-media {
         justify-content: space-between;
+        padding-left: 900px;
+        margin-top: -20px;
     }
     
     .footer-copyright p {
-        padding-right: 45rem;
+        padding-right: 60rem;
     }
 
 }
@@ -449,8 +481,7 @@ footer {
 
     .menu-icon {
         display: block;
-        right: 10rem;
-        margin-right: 1px;
+        margin-right: 30px;
     }
 
     .menu-abrir {
@@ -472,7 +503,7 @@ footer {
     }
 
     h1 {
-        margin-left: 12rem;
+        margin-left: 5rem;
     }
 
     .world-linea {
@@ -486,12 +517,12 @@ footer {
     .descripcion {
         height: 3rem;
         max-width: 31rem;
-        margin-left: 12rem;
+        margin-left: 5rem;
         margin-top: 0.5rem;
     }
 
     .conoce-mas {
-        margin-left: 12rem;
+        margin-left: 5rem;
     }
 
     .episodios {
@@ -504,7 +535,7 @@ footer {
     .episodios h2 {
         color: #ffffff;
         margin-bottom: 1.2rem;
-        margin-left: 12rem;
+        margin-left: 5rem;
         margin-top: 1.2rem;
     }
 
@@ -550,14 +581,14 @@ footer {
         height: auto;
         width: 100vw;
         justify-content: center;
-        margin-left: 4rem;
+        margin-left: -2rem;
     }
     
     .topicos-iconos-flex img {
         flex-basis: auto;
         margin-bottom: 0.8rem;
+
     }
-  
 
     .entrevistas-titulo {
         margin-left: 5rem;
@@ -565,7 +596,7 @@ footer {
 
     .novedades-titulo {
         text-align: center;
-        margin-left: 4rem;
+        margin-left: 2.5rem;
         max-width: fit-content;
     }
     .novedades-btn {
@@ -575,23 +606,15 @@ footer {
 
     .footer-copyright p {
         padding-right: 12rem;
-        margin-left: 1rem;
+        margin-left: 10rem;
     }
 
     .footer-social-media {
-        margin-right: 1rem;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 2rem 30rem 0rem -30rem;
     }
 
-    .footer-social-media > a {
-        display: inline;
-        margin-left: 2rem;
-    }
-    
-    .footer-social-media > i {
-        width: 1rem;
-        height: 1.75rem;
-    }
 }
 
 @media only screen and (max-width: 426px) {
@@ -599,7 +622,11 @@ footer {
     .logo {
         height: 1.5rem;
         width: 1.5rem;
-        margin-left: 1.2rem;
+        margin-left: 2rem;
+    }
+
+    .menu-icon {
+        margin-right: 2rem;
     }
 
     .navigation ul {
@@ -629,8 +656,9 @@ footer {
     h1 {
         font-size: 2.25rem;
         margin-top: 1.9rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         margin-bottom: 1rem;
+        max-width: 400px;
     }
 
     .world-linea {
@@ -648,13 +676,13 @@ footer {
         height: 4.5rem;
         max-width: 21rem;
         margin-right: 1rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         font-weight: lighter;
     }
 
     .conoce-mas {
         font-size: 1rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         padding-top: 0.8rem;
         width: 18rem;
         height: 3rem;
@@ -681,28 +709,29 @@ footer {
         font-weight: lighter;
         margin-top: 1rem;
         margin-bottom: 1.3rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
+    .episodios {
+        margin: 0.2rem 1.8rem 10rem 2.5rem;
+        height: 1400px;
+    }
+    
     .episodios-frames {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative;
-        right: 1rem;
-    }
-
-    .episodios-frames iframe {
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: 0rem;
-        margin-bottom: 0.69rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 20rem);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        position: absolute;
+       
     }
 
     .nosotros {
         margin-top: -7.3rem;
         margin-bottom: 2rem;
+        margin-left: 2rem;
         display: block;
     }
     
@@ -732,7 +761,7 @@ footer {
     }
 
     .entrevistas-titulo {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 
     .entrevistas-titulo h2 {
@@ -788,7 +817,7 @@ footer {
 
     .topicos-titulo {
         margin-top: 3rem;
-        margin-left: 1rem;
+        margin-left: 4rem;
         margin-bottom: 2.25rem;
         max-width: 17rem;
     }
@@ -806,6 +835,7 @@ footer {
         height: 45rem;
         width: 100vw;
         justify-content: center;
+        margin-left: -2rem;
     }
     
     .topicos-iconos-flex {
@@ -836,7 +866,7 @@ footer {
     .novedades-titulo h2 {
         margin-top: 3.5rem;
         margin-bottom: 2rem;
-        margin-left: 0.01rem;
+        margin-left: -2rem;
         font-size: 2.25rem;
         width: 18rem;
         font-weight: lighter;
@@ -851,7 +881,7 @@ footer {
         width: 18rem;
         height: 3rem;
         padding: 0.81rem 2.69rem;
-        left: 4.8rem;
+        margin-left: -6.5rem;
     }
     
     .footer {
@@ -868,24 +898,19 @@ footer {
     }
 
     .footer-social-media {
-        margin-right: 1rem;
-        justify-content: center;
-    }
-
-    .footer-social-media > a {
-        display: inline;
-        margin-left: 2rem;
-    }
-    
-    .footer-social-media > i {
-        width: 1rem;
-        height: 1.75rem;
+        display: flex;
+        align-items: center;
+        margin: 2rem 40rem 0rem -19rem;
     }
 
 }
 
 @media only screen and (max-width: 376px) {
-    
+
+    .menu-icon {
+        margin-right: 2rem;
+    }
+
     .navigation ul {
         width: 50vw;
         height: 14rem;
@@ -903,16 +928,22 @@ footer {
         text-decoration: line-through;
     }
     
-    .episodios-frames iframe {
-        margin-left: 1rem;
+    .episodios-frames {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 15rem);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        position: absolute;
     }
     
     .nosotros .nosotros-image img {
         margin-left: 0rem;
     }
 
-    .entrevistas-images {
-        grid-template-rows: repeat(6, 1fr);
+    .entrevistas-imagenes {
+        grid-template-columns: repeat(1, 1fr);
     }
         
     .entrevistas-images > img {
@@ -920,14 +951,149 @@ footer {
         margin-top: -1px;
     }
 
+    .topicos-iconos-flex img {
+        flex-basis: auto;
+        margin-bottom: 0.8rem;
+        margin-left: -9rem;
+    }
+
+    .icons-title {
+        margin-left: -9rem;
+    }
+
     .novedades-titulo h2 {
         margin-left: 1rem;
         position: relative;
-        left: 2rem;
+        left: -2rem;
     }
     
     .novedades-btn {
         left: 3rem;
+    }
+
+    .footer-social-media {
+        display: flex;
+        align-items: center;
+        margin: 2rem 40rem 0rem -19rem;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+
+    .logo {
+        margin-left: 1.6rem;
+    }
+
+    .menu-icon {
+        margin-right: 2rem;
+    }
+
+    .navigation ul {
+        width: 50vw;
+        height: 14rem;
+        margin-top: 0.88rem;
+        margin-left: 10.25rem;
+        box-sizing: content-box;
+    }
+
+    h1 {
+        margin: -0.5rem 1rem 0.5rem 5rem;
+        max-width: 300px;
+    }
+
+    .descripcion {
+        margin: -0.5rem 1.8rem 5rem 5rem;
+        max-width: 280px; 
+    }
+   
+    .conoce-mas {
+        margin: 1rem 1rem 3rem 5rem; 
+    }
+
+    .episodios {
+        margin: 0.2rem 1.8rem 1rem 2.5rem; 
+    }
+    
+    .episodios-frames {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(1, 15rem);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+        position: absolute;
+    }
+
+    .nosotros .nosotros-image img {
+        margin: -5rem 1rem 1rem -1.8rem;
+    }
+
+    .nosotros {
+        margin: 1rem 1rem 1rem 2rem;
+    }
+
+    .entrevistas {
+        margin: 1rem 1rem 1rem 2rem;
+        max-width: 280px; 
+    }
+
+    .entrevistas-images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    } 
+
+    .entrevistas-imagenes img {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    .topicos-titulo {
+        margin: 3rem 1rem 0rem 3.8rem;
+    }
+
+    .topicos-iconos-flex {
+        flex-basis: auto;
+        margin-bottom: 0.8rem;
+        margin-left: 4.5rem;
+    }
+
+    .topicos-iconos-flex img {
+        flex-basis: auto;
+        margin-bottom: 0.8rem;
+        margin-left: -5rem;
+    }
+
+    .icons-title {
+        margin-left: -5rem;
+    }
+
+    .novedades-titulo {
+        margin: 0rem 0rem 1rem 4rem; 
+        position: relative; 
+    }
+    
+    .novedades-btn {
+        left: 4rem;
+    }
+    
+    .footer-copyright p {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin: 0rem 0rem 1.25rem 0.25rem;
+    }
+    
+    .footer-social-media {
+        display: flex;
+        align-items: center;
+        margin: 0rem 40rem 0rem -19rem;
     }
 
 }
